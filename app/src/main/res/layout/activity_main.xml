@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="#10808080"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="PLMSCS Registration"
+                    android:id="@+id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/search_box"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:id="@+id/box_method"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/ed_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/rounded_shape_lang"
+                        android:hint="First Name"
+                        android:padding="10dp"
+                        android:textColorHint="#40111827"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ed_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/rounded_shape_lang"
+                        android:hint="Last Name"
+                        android:layout_marginTop="15dp"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColorHint="#40111827"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/ed_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/rounded_shape_lang"
+                        android:hint="Enter Your Email"
+                        android:layout_marginTop="15dp"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColorHint="#40111827"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/ed_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/rounded_shape_lang"
+                        android:hint="Enter Your mobile"
+                        android:layout_marginTop="15dp"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColorHint="#40111827"
+                        android:textSize="14sp"/>
+
+                    <EditText
+                        android:id="@+id/ed_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/rounded_shape_lang"
+                        android:hint="Enter Your password"
+                        android:layout_marginTop="15dp"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textColorHint="#40111827"
+                        android:textSize="14sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:id="@+id/date_box"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Date of birth:"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_height="18dp">
+                        </TextView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <Spinner
+                                android:layout_width="100dp"
+                                android:id="@+id/day"
+                                android:layout_height="50dp" />
+
+                            <Spinner
+                                android:layout_width="100dp"
+                                android:id="@+id/month"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="50dp"
+                                />
+
+                            <Spinner
+                                android:layout_width="100dp"
+                                android:id="@+id/year"
+                                android:layout_marginLeft="20dp"
+                                android:layout_height="50dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="48dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Gender:"
+                            android:id="@+id/gender"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+
+
+                        <RadioGroup
+                            android:id="@+id/radioGrp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/radioM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:checked="true"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:text="Male"
+                                />
+                            <RadioButton
+                                android:id="@+id/radioF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:checked="false"
+                                android:layout_weight="1"
+                                android:textSize="14dp"
+                                android:text="Female"
+                                />
+                        </RadioGroup>
+                    </LinearLayout>
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:id="@+id/spinBrach"
+                        android:layout_height="50dp" />
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:id="@+id/spinPos"
+                        android:layout_height="50dp" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/bt_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/box_method"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/register_shape"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
